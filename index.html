@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sandeep Dhaba | IMT Manesar</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #2b1a0e;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #8b1e0f;
+      color: white;
+      padding: 15px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #fff0d2, #ffd18a);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #7d180d;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d35400;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #a83f00;
+    }
+
+    section {
+      padding: 55px 7%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      color: #8b1e0f;
+      margin-bottom: 30px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .food {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .food h3 {
+      color: #a33b00;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .contact-box {
+      background: #fff0d2;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #3b1b0d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🍛 Sandeep Dhaba</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Welcome to Sandeep Dhaba</h1>
+
+      <p>
+        Delicious Food • Great Taste • Homely Feeling
+      </p>
+
+      <p>
+        📍 IMT Manesar
+      </p>
+
+      <a href="#menu" class="button">View Menu</a>
+
+      <!-- अपना असली WhatsApp नंबर नीचे डालें -->
+      <a href="https://wa.me/YOURNUMBER" class="button">
+        💬 WhatsApp Us
+      </a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>🍛 Our Menu</h2>
+
+    <div class="menu">
+
+      <div class="food">
+        <h3>Dal Tadka</h3>
+        <p>Fresh and delicious dal prepared with traditional spices.</p>
+      </div>
+
+      <div class="food">
+        <h3>Rajma Chawal</h3>
+        <p>Homestyle rajma served with hot rice.</p>
+      </div>
+
+      <div class="food">
+        <h3>Chole Bhature</h3>
+        <p>Spicy chole with fresh bhature.</p>
+      </div>
+
+      <div class="food">
+        <h3>Paratha</h3>
+        <p>Freshly prepared hot parathas.</p>
+      </div>
+
+      <div class="food">
+        <h3>Thali</h3>
+        <p>A complete and satisfying Indian meal.</p>
+      </div>
+
+      <div class="food">
+        <h3>Tea & Snacks</h3>
+        <p>Perfect for a quick break and evening cravings.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>⭐ About Sandeep Dhaba</h2>
+
+    <div class="about">
+      <p>
+        Sandeep Dhaba is a friendly food destination in IMT Manesar,
+        serving tasty and homestyle Indian food.
+        We believe in good taste, fresh food and a welcoming atmosphere.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📍 Visit Us</h2>
+
+    <div class="contact-box">
+      <h3>Sandeep Dhaba</h3>
+
+      <p>📍 IMT Manesar, Haryana</p>
+
+      <p style="margin-top: 15px;">
+        Come and enjoy delicious food with us!
+      </p>
+
+      <!-- अपना असली फोन नंबर डालें -->
+      <a href="tel:YOURNUMBER" class="button">
+        📞 Call Now
+      </a>
+
+      <!-- अपना असली WhatsApp नंबर डालें -->
+      <a href="https://wa.me/YOURNUMBER" class="button">
+        💬 WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sandeep Dhaba. All Rights Reserved.</p>
+    <p>IMT Manesar</p>
+  </footer>
+
+</body>
+</html>
